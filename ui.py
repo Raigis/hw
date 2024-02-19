@@ -1,8 +1,7 @@
-from delete_choice import choice
+from delete_or_copy_choice import choice
 from change_data import change_row
 from add_data import add_row
 from print_data import print_file
-from copy_data import copy_row
 from add_file import add_new_file
 
 
@@ -41,11 +40,11 @@ def start_menu():
         elif command == 2:
             add_row()  
         elif command == 3:
-            choice()
+            choice("удалить")
         elif command == 4:
             change_row()
         elif command == 5:
-            copy_row()
+            choice("скопировать")
         elif command == 6:
             print_file()
     print("Спасибо, что воспользовались нашими услугами!\n"
